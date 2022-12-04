@@ -11,13 +11,13 @@
     <title> Our Services</title>
 </head>
 
-<body style="background-image: url('https://img.freepik.com/premium-photo/grunge-asphalt-road-surface-with-city_163855-159.jpg?w=1060'); background-position: center; background-size: cover;">
+<body onload="myFuction()"
+    style="background-image: url('https://img.freepik.com/premium-photo/grunge-asphalt-road-surface-with-city_163855-159.jpg?w=1060'); background-position: center; background-size: cover;">
     <div id="myCode">
-        <nav class="navbar navbar-expand-sm text-light fixed-top"
-            style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,9,121,1) 27%, rgba(0,212,255,1) 100%);
+        <nav class="navbar navbar-expand-sm text-light fixed-top" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,9,121,1) 27%, rgba(0,212,255,1) 100%);
             position: absolute;">
             <div class="container-fluid">
-                <i class="fa-solid fa-truck-monster text-danger ms-1" style="font-size: 30px;"></i>
+               <a href="index.html"> <i class="fa-solid fa-truck-monster text-danger ms-1" style="font-size: 30px;"></i></a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#responsivebar">
                     <span><i class="fa-solid fa-bars text-light"></i></span>
                 </button>
@@ -40,7 +40,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="navbar-nav text-end fw-normal d-none d-md-flex" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                <div class="navbar-nav text-end fw-normal d-none d-md-flex"
+                    style="font-family: Georgia, 'Times New Roman', Times, serif;">
                     <li class="nav-item">
                         <a href="#" class="nav-link text-light">+92 333884 00</a>
                     </li>
@@ -48,26 +49,204 @@
                         <a href="#" class="nav-link text-light">mechanicthebest@gmail.com</a>
                     </li>
                 </div>
-                    </div>
+            </div>
         </nav>
-   <div style="position: absolute; top: 8%;" class="container-fluid mt-1 mt-sm-3">
-    <div class="contaier bg-dark">
-        <h4>We Offer the following service to new customers</h4>
+        <div style="position: absolute; top: 8%; display: none;" class="container-fluid mt-1 mt-sm-3" id="sectionall">
+            <div class="contaier bg-dark text-light">
+                <h4 class=" my-2 my-sm-5 h6 h1-sm">We Offer the following service to <mark>New Customers</mark></h4>
+                <div class="text-center d-flex align-items-center justify-content-center container-fluid small">
+                    <table class="table bg-light text-dark fw-bold table-hover table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>S no.</th>
+                                <th>Service</th>
+                                <th>Oil Change</th>
+                                <th>Interior Change</th>
+                                <th>Seat Cover</th>
+                                <th>Tire Change</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>✔</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-success">✔</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-warning fw-bold">$100</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-warning fw-bold">$200</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="text-success">✔</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-success">✔</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-success">✔</td>
+                                <td class="text-warning fw-bold">$300</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-success">✔</td>
+                                <td class="text-success">✔</td>
+                                <td class="text-success">✔</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-warning fw-bold">$400</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="text-success">✔</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-success">✔</td>
+                                <td class="text-danger">X</td>
+                                <td class="text-success">✔</td>
+                                <td class="text-warning fw-bold">$500</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td><button class="btn btn-warning p-0 p-sm-2 fw-bold" style="height:5vh; font-size:10px;">Buy now</button></td>
+                                <td><button class="btn btn-warning p-0 p-sm-2 fw-bold" style="height:5vh; font-size:10px;">Buy now</button></td>
+                                <td><button class="btn btn-warning p-0 p-sm-2 fw-bold" style="height:5vh; font-size:10px;">Buy now</button></td>
+                                <td><button class="btn btn-warning p-0 p-sm-2" style="height:5vh; font-size:9px;">Buy now</button></td>
+                                <td><button class="btn btn-warning p-0 p-sm-2 fw-bold" style="height:5vh; font-size:10px;">Buy now</button></td>
+                                
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
+            </div>
 
+            <div class="contaier bg-dark text-light">
+                <h4 class="my-2 my-sm-5 h6">We Offer the following service to <mark>Old Customers</mark></h4>
+                <div class="text-center d-flex align-items-center justify-content-center container-fluid small">
+                    <table class="table bg-light text-dark fw-bold table-hover table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>S no.</th>
+                                <th>Service</th>
+                                <th>Oil Change</th>
+                                <th>Interior Change</th>
+                                <th>Seat Cover</th>
+                                <th>Tire Change</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="text-success">YES</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-success">YES</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-success">$100</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-success">$200</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="text-success">YES</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-success">YES</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-success">YES</td>
+                                <td class="text-success">$300</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-success">YES</td>
+                                <td class="text-success">YES</td>
+                                <td class="text-success">YES</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-success">$400</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="text-success">YES</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-success">YES</td>
+                                <td class="text-danger">NO</td>
+                                <td class="text-success">YES</td>
+                                <td class="text-success">$500</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td><button class="btn btn-success p-0 p-sm-2 fw-bold" style="height:5vh; font-size:10px;">Buy now</button></td>
+                                <td><button class="btn btn-success p-0 p-sm-2 fw-bold" style="height:5vh; font-size:10px;">Buy now</button></td>
+                                <td><button class="btn btn-success p-0 p-sm-2 fw-bold" style="height:5vh; font-size:10px;">Buy now</button></td>
+                                <td><button class="btn btn-success p-0 p-sm-2" style="height:5vh; font-size:9px;">Buy now</button></td>
+                                <td><button class="btn btn-success p-0 p-sm-2 fw-bold" style="height:5vh; font-size:10px;">Buy now</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="container-fluid bg-light text-dark p-2">
+                <mark>A Message from Owner</mark>
+                <p class="text-center lead"><em>
+                    These offers are the best amoung the the servic station in Pakistan, You will love it.
+                    We care about your vehicle and secuirty, We have total of <mark>16</mark> stations. We are 
+                    World wide know and also know for the best service startion all over the world
+                </em>
+                <figcaption class="blockquote-footer text-end mt-2">
+                    From Monster Service Owner <cite title="Source Title"><mark>Hamza Khushal</mark></cite>
+                  </figcaption>
+                </p>
+
+            </div>
+
+            <div
+                class="container-fluid bg-dark mt-2 text-light p-4 p-sm-5 fs-1 fs-sm-6 text-center border border-light">
+                <i class="fa-brands fa-facebook px-2"></i>
+                <i class="fa-brands fa-github px-2"></i>
+                <i class="fa-brands fa-instagram px-2"></i>
+                <i class="fa-brands fa-twitter px-2"></i>
+                <h6 class="text-muted mt-2 ">By @mZee Dev</h6>
+            </div>
+        </div>
+    </div>
     </div>
 
-    <div class="container-fluid bg-dark mt-2 text-light p-4 p-sm-5 fs-1 fs-sm-6 text-center border border-light">
-        <i class="fa-brands fa-facebook px-2"></i>
-        <i class="fa-brands fa-github px-2"></i>
-        <i class="fa-brands fa-instagram px-2"></i>
-        <i class="fa-brands fa-twitter px-2"></i>
-        <h6 class="text-muted mt-2 ">By @mZee Dev</h6>
-    </div>
-    </div>
-   </div>
-    
+
+<div class="container-fluid bg-light align-items-center justify-content-center" style="height: 100vh; display: flex;" id="loadingicon">
+    <div class="spinner-border text-info fs-1"></div>
 </div>
+
+
+
+<script>
+    var myVar;
+  function myFuction() {
+    myVar = setTimeout(showpage, 2000)
+  }
+  function showpage(){
+document.getElementById('loadingicon').style.display = 'none';
+document.getElementById('sectionall').style.display = 'block';
+
+  }
+  
+</script>
 </body>
 
 </html>
