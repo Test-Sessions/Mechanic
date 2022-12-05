@@ -49,18 +49,21 @@
                     </div>
         </nav>
    <div style="position: absolute; top: 8%;" class="container-fluid mt-1 mt-sm-3">
-    <div class="alert alert-success container m-0 p-1 ms-0 ms-sm-5">
-        <p>We have received your message, We will contact you back as soon as possible :)</p>
-    </div>
-    <div class="container-fluid d-flex justify-content-center align-items-center text-dark bg-light" style="height: 90vh; width: 98%;">
-        <form class="text-center align-items-center" action="link here">
+    <div class="alert alert-success alert-dismissible p-3 mx-0 mx-sm-5 my-1 fade show" id="message"
+    style="display: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>Success!</strong> We have recieved your message, we will contact you as soon as possible.
+      </div>
+    <div class="container-fluid d-flex justify-content-center align-items-center text-dark border border-danger" style="height: 90vh; width: 98%;
+    background-color: rgba(255, 255, 255, 0.423);">
+        <form class="text-center align-items-center" onsubmit="myFuction()">
             <h1 class="h3 font-weight-normal mb-3">Contact Us</h1>
-            <input type="text" placeholder="First Name" class="form-control p-2 m-1" style="width:330px;" autofocus required>
-            <input type="email" placeholder="Emaill address" class="form-control p-2 m-1" style="width:330px;" required> 
-            <input type="text" placeholder="Country" class="form-control p-2 m-1" style="width: 330px;" required>
+            <input type="text" placeholder="First Name" class="form-control p-2 m-1" style="width:330px;" autofocus >
+            <input type="email" placeholder="Emaill address" class="form-control p-2 m-1" style="width:330px;" > 
+            <input type="text" placeholder="Country" class="form-control p-2 m-1" style="width: 330px;" >
             <textarea class="form-control m-1" rows="5" placeholder="Your message/suggestion" style="width: 330px;"></textarea>
             <button class="btn btn-success mt-3 btn-block" style="width: 100%;">Send message</button>
-            <p class="text-muted mt-5 mb-3">You can also call us <span class="text-highlight">+92 12373 8355</span></p>
+            <p class="text-muted mt-5 mb-3"><mark>You can also call us <span class="text-primary fw-bold">+92 12373 8355</span></mark></p>
         </form>
          </div>
         
@@ -76,6 +79,14 @@
    </div>
     
 </div>
+<script>
+    function timeout(){
+        setTimeout(myFuction, 3000)
+    }
+    function myFunction() {
+        document.getElementById('message').style.display = 'block';
+    }
+</script>
 </body>
 
 </html>
